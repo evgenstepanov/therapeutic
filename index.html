@@ -3,33 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script defer src="/js/swiper.js"></script>
     <title>THERAPEUTIC</title>
   </head>
   <body class="body">
     <header class="header">
-      <div class="header__menu">
-        <ul class="header__menu-items">
-          <li class="header__menu-item">
-            <a class="header__link" href="#">Home</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__link" href="#">About Us</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__link" href="#">Pages</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__link" href="#">Gallery</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__link" href="#">Mail Us</a>
-          </li>
-        </ul>
+      <div class="body__container">
+        <div class="header__container">
+          <div class="menu header__menu">
+            <ul class="menu__items">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Pages</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Gallery</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Mail Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.menu -->
+          <div class="logo">
+            <i class="fas fa-stethoscope"></i>
+            <h1 class="logo__title text-title">THERAPEUTIC</h1>
+            <p class="logo__credo text--weight--bold">CARE FOR YOU</p>
+          </div>
+          <!-- /.logo -->
+          <a
+            class="phone header__phone phone--bg-blue"
+            href="tel:+00 28 28 28 85"
+            ><i class="fa fa-phone phone__img"></i>+00 28 28 28 85</a
+          >
+          <!-- /.phone -->
+        </div>
+        <!-- /.header__container -->
+
+        <!-- /.credo -->
+
+        <div class="swiper">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="credo">
+                  <h2
+                    class="credo__title text-title text--letter-spacing--light"
+                  >
+                    BEST TREATMENTS
+                  </h2>
+                  <p class="credo__text text--letter-spacing--high">
+                    We Provide the Best Medical Services
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="credo">
+                  <h2
+                    class="credo__title text-title text--letter-spacing--light"
+                  >
+                    WE PROVIDE
+                  </h2>
+                  <p class="credo__text text--letter-spacing--high">
+                    Medical Services that you can Trust.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="credo">
+                  <h2
+                    class="credo__title text-title text--letter-spacing--light"
+                  >
+                    BETTER TECHNOLOGY
+                  </h2>
+                  <p class="credo__text text--letter-spacing--high">
+                    We Care About Your Health.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- /.swiper -->
       </div>
+      <!-- /.body__container -->
+      <div class="booking">
+        <h1 class="title-booking"></h1>
+        <!-- /.title-booking -->
+        <form class="form-booking" action="">
+          <input
+            class="form-booking__item"
+            type="text"
+            placeholder="Patient name"
+          />
+          <input
+            class="form-booking__item"
+            type="text"
+            placeholder="Departments"
+          />
+          <input class="form-booking__item" type="datetime" placeholder="" />
+          <input class="form-booking__item" type="text" placeholder="" />
+          <input class="form-booking__btn" type="button" />
+        </form>
+        <!-- /.form-booking -->
+      </div>
+      <!-- /.booking -->
     </header>
   </body>
 </html>

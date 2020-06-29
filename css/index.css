@@ -1,3 +1,144 @@
-body{
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* modificators */
+.text-title {
+  font-size: 2.6em;
+  font-weight: 700;
+}
+.text--letter-spacing--high {
+  letter-spacing: 8px;
+}
+.text--letter-spacing--light {
+  letter-spacing: 3px;
+}
+.text--weight--bold {
+  font-weight: 700;
+}
+.text--weight--light {
+  font-weight: 400;
+}
+
+/* body */
+.body {
   font-family: 'Signika Negative', sans-serif;
+  font-size: 16px;
+  color: white;
+  height: 3000px;
+  font-weight: 300;
+  padding-top: 44px;
+}
+.body__container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  min-height: 780px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header__menu {
+  padding: 30px 0 0 20px;
+  width: 175px;
+}
+.menu__link {
+  display: block;
+  padding: 12px 15px;
+  text-align: center;
+  position: relative;
+}
+.menu__link--active {
+  border-bottom: 1px solid rgb(104, 90, 236);
+}
+.menu__link--active:hover:after {
+  display: none;
+}
+.menu__link:after {
+  content: '';
+  display: block;
+  background: rgb(104, 90, 236);
+  height: 1px;
+  width: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transition: all 0.4s;
+  transform: translateX(-50%);
+}
+.menu__link:hover:after {
+  width: 100%;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fa-stethoscope {
+  color: #fff;
+  font-size: 33px;
+}
+.logo__title {
+  padding: 10px 0;
+}
+.header__phone {
+  display: block;
+  margin: 30px 20px 0 0;
+}
+.phone {
+  width: 175px;
+  padding: 12px 20px;
+}
+.phone--bg-blue {
+  background: rgb(126, 163, 241);
+}
+.phone__img {
+  padding-right: 10px;
+}
+
+/* credo */
+.credo {
+  text-align: center;
+}
+.credo__title {
+  padding: 20px 0 28px 0;
+}
+.credo__text{
+  padding-bottom: 80px;
+}
+
+/* swiper */
+.swiper-pagination-bullet{
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  background: #fff;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+.swiper-pagination-bullet-active{
+  background: rgb(126, 163, 241);
 }
