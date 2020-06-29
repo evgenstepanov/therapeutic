@@ -23,6 +23,13 @@ a {
 .text--weight--light {
   font-weight: 400;
 }
+.button {
+  border: none;
+  background: none;
+}
+.block--flex{
+  flex: 1;
+}
 
 /* body */
 .body {
@@ -42,25 +49,20 @@ a {
 .header {
   background-image: url(../img/bg1.jpg);
   background-size: cover;
-  min-height: 780px;
+  max-height: 848px;
 }
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   padding-top: 20px;
 }
 
 /* menu */
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
+
 .header__menu {
-  padding: 30px 0 0 20px;
-  width: 175px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 80px;
 }
 .menu__link {
   display: block;
@@ -103,13 +105,19 @@ a {
 .logo__title {
   padding: 10px 0;
 }
+
+/* phone */
 .header__phone {
   display: block;
-  margin: 30px 20px 0 0;
 }
 .phone {
   width: 175px;
   padding: 12px 20px;
+}
+.phone-box{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px;
 }
 .phone--bg-blue {
   background: rgb(126, 163, 241);
@@ -125,20 +133,65 @@ a {
 .credo__title {
   padding: 20px 0 28px 0;
 }
-.credo__text{
+.credo__text {
   padding-bottom: 80px;
 }
 
 /* swiper */
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   width: 16px;
   height: 16px;
   opacity: 1;
   background: #fff;
 }
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 0 10px;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background: rgb(126, 163, 241);
+}
+.swiper {
+  padding-bottom: 130px;
+}
+
+/* booking */
+.booking {
+  background: rgba(0, 0, 0, 0.54);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.booking__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.booking__title {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.form {
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  padding: 35px 35px;
+  background: #000;
+  margin: 0 10%;
+}
+.form-booking__item {
+  padding: 13px 0px;
+  outline: none;
+  border: none;
+  flex-grow: 1;
+}
+.form-booking__input {
+  padding-left: 10px;
+}
+.form-booking__btn {
+  padding: 13px 0px;
+  background: rgb(126, 163, 241);
+  outline: 1px solid rgb(189, 64, 64);
+  outline-offset: -2px;
 }

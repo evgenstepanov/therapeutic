@@ -22,7 +22,7 @@
     <header class="header">
       <div class="body__container">
         <div class="header__container">
-          <div class="menu header__menu">
+          <div class="menu header__menu block--flex">
             <ul class="menu__items">
               <li class="menu__item">
                 <a class="menu__link menu__link--active" href="#">Home</a>
@@ -42,17 +42,19 @@
             </ul>
           </div>
           <!-- /.menu -->
-          <div class="logo">
+          <div class="logo block--flex">
             <i class="fas fa-stethoscope"></i>
             <h1 class="logo__title text-title">THERAPEUTIC</h1>
             <p class="logo__credo text--weight--bold">CARE FOR YOU</p>
           </div>
           <!-- /.logo -->
-          <a
-            class="phone header__phone phone--bg-blue"
-            href="tel:+00 28 28 28 85"
-            ><i class="fa fa-phone phone__img"></i>+00 28 28 28 85</a
-          >
+          <div class="phone-box block--flex">
+            <a
+              class="phone header__phone phone--bg-blue"
+              href="tel:+00 28 28 28 85"
+              ><i class="fa fa-phone phone__img"></i>+00 28 28 28 85</a
+            >
+          </div>
           <!-- /.phone -->
         </div>
         <!-- /.header__container -->
@@ -109,24 +111,26 @@
       </div>
       <!-- /.body__container -->
       <div class="booking">
-        <h1 class="title-booking"></h1>
+        <h1 class="booking__title">BOOK YOUR APPOINTMENT NOW</h1>
         <!-- /.title-booking -->
-        <form class="form-booking" action="">
-          <input
-            class="form-booking__item"
-            type="text"
-            placeholder="Patient name"
-          />
-          <input
-            class="form-booking__item"
-            type="text"
-            placeholder="Departments"
-          />
-          <input class="form-booking__item" type="datetime" placeholder="" />
-          <input class="form-booking__item" type="text" placeholder="" />
-          <input class="form-booking__btn" type="button" />
-        </form>
-        <!-- /.form-booking -->
+        <div class="form">
+          <form class="booking__form" action="">
+            <input
+              class="form-booking__item form-booking__input"
+              type="text"
+              placeholder="Patient name"
+            />
+            <input
+              class="form-booking__item form-booking__input"
+              type="text"
+              placeholder="Departments"
+            />
+            <input class="form-booking__item form-booking__input" type="datetime" placeholder="" />
+            <input class="form-booking__item form-booking__input" type="text" placeholder="" />
+            <input class="form-booking__item form-booking__btn button" type="button" value="Make an appointment">
+          </form>
+          <!-- /.form-booking -->
+        </div>
       </div>
       <!-- /.booking -->
     </header>
