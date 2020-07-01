@@ -220,14 +220,9 @@ a {
 .form-booking__btn {
   padding: 13px 0px;
   background: rgb(126, 163, 241);
-  outline: 1px solid rgb(189, 64, 64);
-  outline-offset: -2px;
 }
 
 /* about us */
-.about-us {
-  background-color: rgb(218, 218, 218);
-}
 .about-us__wrapper {
   display: flex;
   justify-content: center;
@@ -239,6 +234,7 @@ a {
 }
 .about-us__left-side {
   max-width: 540px;
+  margin-right: 40px;
 }
 .about-us__img-box {
   overflow: hidden;
@@ -256,35 +252,106 @@ a {
 .about-us__right-side {
   max-width: 540px;
 }
+.about-us__open-hours {
+  margin-bottom: 40px;
+}
 .open-hours {
   display: flex;
 }
-.open-hours__block{
-flex: 1;
+.open-hours__block {
+  flex: 1;
+  border: 1px solid #000;
+  margin: 0px -1px 0 0;
 }
-.open-hours__title-block{
-font-size: 1.3em;
-line-height: 1.7;
-font-weight: 500;
-background: rgb(126, 163, 241);
-padding: 42px 0;
+.open-hours__title-block {
+  font-size: 1.3em;
+  line-height: 1.7;
+  font-weight: 500;
+  background: rgb(126, 163, 241);
+  padding: 42px 0;
 }
-.open-hours__days{
+.open-hours__days {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgb(189, 64, 64);
+  transition: all 0.4s;
 }
-.open-hours__text{
+.open-hours__days:hover {
+  background: rgb(126, 163, 241);
+}
+.open-hours__text {
   font-weight: 500;
   padding-bottom: 10px;
 }
-.open-hours__time{
+.open-hours__time {
   color: #000;
   font-weight: 700;
   font-size: 1.3em;
 }
-.open-hours__pictures{
+.open-hours__pictures {
   display: flex;
+}
+.pictures__item-left {
+  margin-right: 15px;
+}
+
+/* what we do */
+.what-we-do{
+  background: rgb(212, 212, 212);
+}
+.what-we-do__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.what-we-do__left {
+  margin-right: 40px;
+}
+.what-we-do__pictures {
+  display: flex;
+  margin-bottom: 70px;
+}
+.what-we-do__picture {
+  position: relative;
+  overflow: hidden;
+}
+.what-we-do__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  padding: 0 7%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.what-we-do__text {
+  padding: 10px 0px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  transform: translateX(-520px);
+}
+.what-we-do__text--fast {
+  transition: all 0.3s;
+}
+.what-we-do__text--normal {
+  transition: all 0.6s;
+}
+.what-we-do__text--slow {
+  transition: all 0.9s;
+}
+.what-we-do__picture:hover .what-we-do__text {
+  transform: translateX(0px);
+}
+.what-we-do__picture-item {
+  max-width: 100%;
+  transition: all 0.8s;
+}
+.what-we-do__picture:hover .what-we-do__picture-item {
+  z-index: -1;
+  transform: scale(1.2);
 }
