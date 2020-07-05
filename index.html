@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link
       rel="stylesheet"
@@ -12,10 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
-    <script defer src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script defer src="/js/swiper.js"></script>
     <title>THERAPEUTIC</title>
   </head>
   <body class="body">
@@ -294,7 +296,7 @@
               <i class="fa fa-medkit our-services__pic" aria-hidden="true"></i>
               <!-- /.our-services__pic -->
               <h4 class="our-services__title">
-                Review service
+                Choose best practice
               </h4>
               <p class="our-services__text">
                 esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor.
@@ -304,10 +306,13 @@
             </div>
             <!-- /.our-services__item -->
             <div class="our-services__item">
-              <i class="fa fa-ambulance our-services__pic" aria-hidden="true"></i>
+              <i
+                class="fa fa-ambulance our-services__pic"
+                aria-hidden="true"
+              ></i>
               <!-- /.our-services__pic -->
               <h4 class="our-services__title">
-                Review service
+                Book appointment
               </h4>
               <p class="our-services__text">
                 esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor.
@@ -317,16 +322,19 @@
             </div>
             <!-- /.our-services__item -->
             <div class="our-services__item our-services__item--last">
-              <i class="fa fa-hospital our-services__pic" aria-hidden="true"></i>
+              <i
+                class="fa fa-hospital our-services__pic"
+                aria-hidden="true"
+              ></i>
               <!-- /.our-services__pic -->
               <h4 class="our-services__title">
-                Review service
+                Medical professionals
               </h4>
               <p class="our-services__text">
                 esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor.
                 reprehenderit
               </p>
-              
+
               <!-- /.our-services__text -->
             </div>
             <!-- /.our-services__item -->
@@ -338,5 +346,19 @@
       <!-- /.body__container -->
     </section>
     <!-- /.our-services -->
+    <section class="feedback">
+      <div
+        class="parallax"
+        data-parallax="scroll"
+        data-image-src="./img/tes.jpg"
+      >
+        <div>My second Layer!</div>
+      </div>
+    </section>
+    <!-- /.feedback -->
   </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/swiper.js"></script>
+  <script src="/js/jquery-3.5.1.min.js"></script>
+  <script src="/js/parallax.min.js"></script>
 </html>
