@@ -159,7 +159,7 @@ a {
 }
 
 /* credo */
-.credos{
+.credos {
   margin-bottom: 80px;
 }
 .credo {
@@ -187,7 +187,6 @@ a {
 .swiper-pagination-bullet-active {
   background: rgb(126, 163, 241);
 }
-
 
 /* booking */
 .booking {
@@ -234,7 +233,7 @@ a {
 }
 .about-us__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .about-us__title {
   padding-top: 70px;
@@ -242,7 +241,6 @@ a {
 }
 .about-us__left-side {
   max-width: 540px;
-  margin-right: 40px;
 }
 .about-us__img-box {
   overflow: hidden;
@@ -314,15 +312,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-}
-.what-we-do__left {
-  margin-right: 40px;
+  align-items: space-between;
 }
 .what-we-do__pictures {
   display: flex;
+  justify-content: space-between;
 }
 .what-we-do__picture {
+  flex-basis: 540px;
   position: relative;
   overflow: hidden;
 }
@@ -437,7 +434,7 @@ a {
 }
 
 /* feedback */
-.feedback{
+.feedback {
   padding-bottom: 90px;
 }
 .feedback__container {
@@ -457,14 +454,7 @@ a {
 .feedback__text {
   margin-bottom: 30px;
 }
-.feedback__img {
-  background-image: url(../img/tt1.jpg);
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 2px #f2f2f2;
-  margin-bottom: 20px;
-}
+
 .section-title--after--none:after {
   display: none;
 }
@@ -477,4 +467,12 @@ a {
   border-radius: 15px;
   padding: 7px 15px;
   margin-bottom: 60px;
+}
+.feedback__img {
+  width: 140px;
+  height: 140px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 0 3px #ffffff;
 }
