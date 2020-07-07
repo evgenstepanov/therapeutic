@@ -60,6 +60,9 @@ a {
 .text--weight--light {
   font-weight: 400;
 }
+.text--color--grey {
+  color: #777;
+}
 .section-title--color--dark {
   color: #000;
 }
@@ -72,9 +75,7 @@ a {
   font-family: 'Signika Negative', sans-serif;
   font-size: 14px;
   color: white;
-  height: 4000px;
   font-weight: 300;
-  padding-top: 44px;
 }
 
 /* header */
@@ -475,4 +476,57 @@ a {
   border-radius: 50%;
   margin-bottom: 20px;
   box-shadow: 0 0 0 3px #ffffff;
+}
+.footer {
+  padding: 60px 0;
+  background: #000;
+}
+.footer__container {
+  display: flex;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+.title-of-list{
+font-size: 1.6em;
+}
+.title-of-list--blue{
+  color: #00a0f0;
+text-align: left;
+}
+.about-clinic__list{
+  text-align: left;
+}
+.footer__title-of-list{
+  margin-bottom: 25px;
+}
+.about-clinic__item{
+  margin-bottom: 15px;
+}
+.about-clinic__link{
+  padding-left: 10px;
+  transition: all 0.5s;
+}
+.about-clinic__link:hover{
+  padding-left: 15px;
+  color: #ee4f4f;
+}
+.fa-angle-double-right--red{
+  color: #ee4f4f;
+}
+.contacts{
+  display: flex;
+  align-items: flex-end;
+}
+.contacts__info{
+  text-align: left;
+}
+.contacts__text{
+  padding-left: 10px;
+}
+.contacts__item{
+  margin-bottom: 15px;
 }
